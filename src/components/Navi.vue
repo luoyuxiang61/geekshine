@@ -7,6 +7,7 @@
               <li class="navi-list-item"><span>videos</span></li>
               <li class="navi-list-item"><span>donate</span></li>
           </ul>
+          <span class="login"></span>
       </div>
   </header>
 </template>
@@ -30,7 +31,6 @@ export default {
     div.head-container {
         max-width: 1024px;
         margin: 0 auto;
-        padding-top: 5px;
     }
 
     span.logo-big {
@@ -41,6 +41,7 @@ export default {
         background-repeat: no-repeat;
         display: inline-block;
         cursor: pointer;
+        margin-bottom: -4.8px;
     }
 
     span.logo-big:hover {
@@ -56,7 +57,8 @@ export default {
     li.navi-list-item {
         display: inline-block;
         line-height: 1.5;
-        padding-top: 8px;
+        padding: 8px 6px 8px 6px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     }
 
     li > span:hover {
