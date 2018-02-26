@@ -1,4 +1,4 @@
-* {
+html,body,nav,div,span,main,footer {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 100px repeat(3,auto) 100px;
+    grid-template-rows: 60px repeat(3,auto) 100px;
     grid-template-areas: 
     "nav nav nav nav nav"
     "main main main main main"
@@ -25,7 +25,7 @@ body {
 
 /* 导航栏 */
 nav {
-    background-color: green;
+    background-image: linear-gradient(#eee,#ddd);
     grid-area: nav;
     display: flex;
     justify-content: space-between;
@@ -35,18 +35,40 @@ span.logo {
     width: 200px;
     display: block;
     background-color: yellow;
+    margin-left: 50px;
+
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
 }
 
-ul.navi {
+span.logo:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+
+span.navi {
+    margin-right: 50px;
     list-style: none;
     background-color: red;
+    width: auto;
+    line-height: 30px;
 }
 
+span.navi-link {
+    
+}
+
+
+
+/* 主要内容 */
 main {
     background-color: pink;
     grid-area: main;
 }
 
+
+/* 页脚 */
 footer {
     background-color: orange;
     grid-area: footer;
