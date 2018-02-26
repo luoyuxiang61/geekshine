@@ -31,7 +31,7 @@ nav {
     justify-content: space-between;
 }
 
-span.logo {
+div.logo {
     width: 200px;
     display: block;
     background-color: yellow;
@@ -42,21 +42,32 @@ span.logo {
     transition-timing-function: ease;
 }
 
-span.logo:hover {
+div.logo:hover {
     cursor: pointer;
     background-color: orange;
 }
 
-span.navi {
+div.navi {
     margin-right: 50px;
-    list-style: none;
     background-color: red;
     width: auto;
-    line-height: 30px;
+    display: flex;
 }
 
-span.navi-link {
-    
+div.navi-link {
+    line-height: 60px;
+    margin-right: 10px;
+}
+
+div.navi-link:nth-child(3) {
+    margin-right: 0;
+}
+
+
+
+div.navi-link:hover {
+    cursor: pointer;
+    color: white;
 }
 
 
