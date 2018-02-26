@@ -59,7 +59,7 @@ div.navi-link {
     margin-right: 10px;
 }
 
-div.navi-link:nth-child(3) {
+div.navi-link:nth-last-child(1) {
     margin-right: 0;
 }
 
