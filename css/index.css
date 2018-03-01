@@ -18,7 +18,7 @@ html {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 56px 56px auto 60px;
+    grid-template-rows: 56px 56px auto 40px;
     grid-template-areas: "header header header header header"
                         "nav nav nav nav nav"
                         "main main main main main"
@@ -39,7 +39,7 @@ html {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 56px 56px auto 60px;
+    grid-template-rows: 56px 56px auto 40px;
     grid-template-areas: "header header header nav nav"
                         "main main main main main"
                         "main main main main main"
@@ -79,6 +79,7 @@ nav a:hover {
 
 nav a:nth-last-child(1) {
     margin-right: 0;
+    margin-left: 2em;
 }
 
 
@@ -91,13 +92,19 @@ main {
     justify-content: center;
     align-items: center;
 
-    background: whitesmoke;
+    background: white;
 }
+
+main input {
+    width: 500px;
+    height: 22px;
+}
+
 
 /* 页脚 */
 footer {
     grid-area: footer;
     display: flex;
 
-    background: linear-gradient(white,gray)
+    background: #f2f2f2;
 }
