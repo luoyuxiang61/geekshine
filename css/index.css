@@ -18,11 +18,19 @@ html {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 56px 56px auto 200px;
+    grid-template-rows: 56px 56px auto 60px;
     grid-template-areas: "header header header header header"
                         "nav nav nav nav nav"
                         "main main main main main"
                         "footer footer footer footer footer";
+    }
+
+    header {
+        background: whitesmoke;
+    }
+
+    nav {
+        background: #24292e;
     }
 }
 
@@ -31,11 +39,15 @@ html {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 56px 56px auto 200px;
+    grid-template-rows: 56px 56px auto 60px;
     grid-template-areas: "header header header nav nav"
                         "main main main main main"
                         "main main main main main"
                         "footer footer footer footer footer";
+    }
+
+    header, nav {
+        background: #24292e;
     }
 }
 
@@ -44,8 +56,6 @@ html {
 header {
     grid-area: header;
     display: flex;
-    
-    background: pink;
 }
 
 
@@ -55,13 +65,22 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background: linear-gradient(#eee,#ddd);
 }
 
 nav a {
     margin-right: 1rem;
+    text-decoration: unset;
+    color: rgba(255,255,255,0.75);
 }
+
+nav a:hover {
+    color: #fff;
+}
+
+nav a:nth-last-child(1) {
+    margin-right: 0;
+}
+
 
 
 /* 主体内容 */
@@ -72,7 +91,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(green,pink)
+    background: whitesmoke;
 }
 
 /* 页脚 */
