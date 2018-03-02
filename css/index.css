@@ -94,10 +94,8 @@ nav a:nth-last-child(1) {
 main {
     grid-area: main;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-
     background: white;
 }
 
@@ -111,6 +109,6 @@ main input {
 footer {
     grid-area: footer;
     display: flex;
-
+    align-items: center;
     background: #f2f2f2;
 }
