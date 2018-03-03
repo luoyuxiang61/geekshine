@@ -7,6 +7,11 @@
 html{
     height: 100%;
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    overflow: hidden;
 }
 
 /* header start */
@@ -17,21 +22,22 @@ header {
 }
 
 header .container {
-    width: 80%;
+    width: 85%;
     max-width: 1024px;
     margin: 0 auto;
 }
 
 header .logo {
-    width: 290px;
+    width: 160px;
     height: 48px;
-    /* background: url('../images/logo.svg') 0px 0px no-repeat; */
+    background: url('../images/logo.svg') 0px 0px no-repeat;
     float: left;
 }
 
 header .logo:hover {
     cursor: pointer;
 }
+
 
 nav {
     float: right;
