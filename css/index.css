@@ -1,114 +1,27 @@
-@font-face {
-    font-family: myFont;
-    src: url();
-}
-
-
-html,body,div,ul,li,header,nav,main,footer {
+* {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-html {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-}
-
-
-
-
-@media screen and (min-width:300px) {
-    body {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 56px 56px auto 40px;
-    grid-template-areas: "header header header header header"
-                        "nav nav nav nav nav"
-                        "main main main main main"
-                        "footer footer footer footer footer";
-    }
-
-    header {
-        background: whitesmoke;
-    }
-
-    nav {
-        background: #24292e;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    body {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 56px 56px auto 40px;
-    grid-template-areas: "header header header nav nav"
-                        "main main main main main"
-                        "main main main main main"
-                        "footer footer footer footer footer";
-    }
-
-    header, nav {
-        background: #24292e;
-    }
-}
-
-
-/* 顶部 */
 header {
-    grid-area: header;
-    display: flex;
+    height: 46px;
+    background-color: gray;
 }
 
-
-/* 导航 */
-nav {
-    grid-area: nav;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header-container {
+    width: 1024px;
+    height: 100%;
+    background: linear-gradient(gray);
+    margin: 0 auto;
 }
 
-nav a {
-    margin-right: 1rem;
-    text-decoration: unset;
-    color: rgba(255,255,255,0.75);
+.header-container .band {
+    height: 46px;
+    width: 80px;
+    background: url('../images/geek.png') 0px 3px no-repeat;
 }
-
-nav a:hover {
-    color: #fff;
-}
-
-nav a:nth-last-child(1) {
-    margin-right: 0;
-    margin-left: 2em;
-}
-
-
-
-/* 主体内容 */
-main {
-    grid-area: main;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: white;
-}
-
-main input {
-    width: 500px;
-    height: 22px;
-}
-
-
-/* 页脚 */
-footer {
-    grid-area: footer;
-    display: flex;
-    align-items: center;
-    background: #f2f2f2;
+.header-container .band:hover {
+    cursor: pointer;
+    background: url('../images/geeks.png') 0px 3px no-repeat;
 }
