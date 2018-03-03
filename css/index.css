@@ -12,7 +12,7 @@ html,body {
 
 header {
     height: 48px;
-    background: #ddd;
+    background: #24292e;
 }
 
 header .container {
@@ -24,7 +24,7 @@ header .container {
 header .logo {
     width: 290px;
     height: 48px;
-    background: url('../images/logo.svg') 0px 0px no-repeat;
+    /* background: url('../images/logo.svg') 0px 0px no-repeat; */
     float: left;
 }
 
@@ -51,24 +51,33 @@ header ul li:nth-last-child(1) {
 
 header ul li a {
     line-height: 48px;
+    color: #eee;
+    text-decoration: unset;
 }
 
-header .login {
+header ul li a:hover {
+    color: rgba(255,255,255,0.75) !important;
+}
+
+header .sign-in {
     width: 48px;
     height: 48px;
     float: right;
     margin-left: 3em;
     position: relative;
+    background: url('../images/git32-white.png') 8px 8px no-repeat;
 }
 
-header .login:hover {
+header .sign-in:hover {
     cursor: pointer;
 }
 
-header .login svg {
+header .sign-in img {
     position: absolute;
     top: 8px;
     left: 8px;
+    color: #fff;
+    white-space: nowrap;
 }
 
 /* header over */
