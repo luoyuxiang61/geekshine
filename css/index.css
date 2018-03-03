@@ -1,27 +1,74 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
+
+html,body {
+    height: 100%;
+}
+
+/* header start */
 
 header {
-    height: 46px;
-    background-color: gray;
+    height: 48px;
+    background: #ddd;
 }
 
-.header-container {
-    width: 1024px;
-    height: 100%;
-    background: linear-gradient(gray);
+header .container {
+    width: 80%;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
-.header-container .band {
-    height: 46px;
-    width: 80px;
-    background: url('../images/geek.png') 0px 3px no-repeat;
+header .logo {
+    width: 290px;
+    height: 48px;
+    background: url('../images/logo.svg') 0px 0px no-repeat;
+    float: left;
 }
-.header-container .band:hover {
+
+header .logo:hover {
     cursor: pointer;
-    background: url('../images/geeks.png') 0px 3px no-repeat;
 }
+
+nav {
+    float: right;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    margin-right: 1em;
+}
+
+header ul li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+header ul li a {
+    line-height: 48px;
+}
+
+header .login {
+    width: 48px;
+    height: 48px;
+    float: right;
+    margin-left: 3em;
+    position: relative;
+}
+
+header .login:hover {
+    cursor: pointer;
+}
+
+header .login svg {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+/* header over */
