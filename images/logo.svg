@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.9195959"
-     inkscape:cx="86.869935"
+     inkscape:cx="78.783745"
      inkscape:cy="16.971501"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -76,9 +76,9 @@
          x="0.26726955"
          y="293.92639"
          style="stroke-width:0.26458332"><tspan
-           style="font-size:7.76111126px;fill:#5f4b8b;fill-opacity:1"
+           style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1"
            id="tspan862">G</tspan><tspan
-           style="font-size:7.76111126px;fill:#5f4b8b;fill-opacity:1;stroke:none"
+           style="font-size:7.76111126px;fill:#ffffff;fill-opacity:1;stroke:none"
            id="tspan18">eek</tspan><tspan
            style="font-size:7.76111126px;fill:#dd4124;fill-opacity:1"
            id="tspan860">Shine</tspan></tspan></text>
