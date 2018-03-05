@@ -14,14 +14,14 @@ linkInput.onpaste = () => {
             if (videoLink.indexOf('https://youtu.be/') === -1) return
             $.ajax({
                 type: 'post',
-                url: 'http://geekshine.io:3000/info2',
+                url: 'https://io.geekshine.io/info2',
                 data: {
                     url: videoLink
                 },
                 success: (info) => {
                     let { title, description, imgHashName } = JSON.parse(info)
                     let out = $("div.out")
-                    out.append(`<div>${title}</div><div>${description}</div><img  src='http://geekshine.io:3000/imgCdn?imgHashName=${imgHashName}'>`)
+                    out.append(`<div>${title}</div><div>${description}</div><img  src='https://io.geekshine.io/imgCdn?imgHashName=${imgHashName}'>`)
                 }
             })
         }, 50)

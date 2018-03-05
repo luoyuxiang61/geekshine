@@ -157,6 +157,17 @@ main div.in .input-wrapper {
 
 
 
+.out #info {
+    width: 38%;
+    float: left;
+}
+
+.out img {
+    height: 200px;
+    width: 300px;
+    float: right;
+}
+
 
 /* main over */
 
@@ -164,6 +175,7 @@ main div.in .input-wrapper {
 
 /* footer start */
 footer {
+    text-align: center;
     height: 40px;
     background: #f2f2f2;
 }
