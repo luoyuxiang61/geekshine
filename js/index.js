@@ -21,7 +21,7 @@ linkInput.onpaste = () => {
                 success: (info) => {
                     let { title, description, imgHashName } = JSON.parse(info)
                     let out = $("div.out")
-                    out.append(`<div>${title}</div><div>${description}</div><img  src='https://io.geekshine.io/imgCdn?imgHashName=${imgHashName}'>`)
+                    out.append(`<div id='info'><h2>${title}</h2><p>${description}<p></div><img  src='https://io.geekshine.io/imgCdn?imgHashName=${imgHashName}'>`)
                 }
             })
         }, 50)
