@@ -23,7 +23,7 @@ linkInput.onpaste = () => {
         go.style.background = ''
         downloadLink.style.display = 'block'
         let encodedVideoLink = [...videoLink].map(x => x.codePointAt(0)).toString()
-        downloadLink.href = `https://io.geekshine.io/geekshine.mp4?url=${encodedVideoLink}`
+        downloadLink.href = `https://cdn.geekshine.io/geekshine.mp4?url=${encodedVideoLink}`
     }, 3000)
 
 
@@ -36,12 +36,12 @@ linkInput.onpaste = () => {
         out.style.background = `url('../images/loading.svg') center 0px no-repeat`
         $.ajax({
             type: 'post',
-            url: 'https://io.geekshine.io/info2',
+            url: 'https://cdn.geekshine.io/info2',
             data: { url: videoLink },
             success: (info) => {
                 out.style.background = ''
                 let { title, description, imgHashName } = JSON.parse(info)
-                out.innerHTML = `<div id='info'><h2>${title}</h2><p>${description}<p></div><img  src='https://io.geekshine.io/imgCdn?imgHashName=${imgHashName}'>`
+                out.innerHTML = `<div id='info'><h2>${title}</h2><p>${description}<p></div><img  src='https://cdn.geekshine.io/imgCdn?imgHashName=${imgHashName}'>`
             }
         })
     }, 50)
