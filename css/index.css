@@ -83,15 +83,6 @@ header .sign-in {
 header .sign-in:hover {
     cursor: pointer;
 }
-
-header .sign-in img {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    color: #fff;
-    white-space: nowrap;
-}
-
 /* header over */
 
 
@@ -106,7 +97,6 @@ main>.container {
     max-width: 1024px;
     min-width: 550px;
     height: 100%;
-    /* background: #eee; */
     margin: 0 auto;
 }
 
@@ -146,16 +136,19 @@ main div.in .input-wrapper {
     width: 56px;
     height: 44px;
     cursor: pointer;
-    color: rgb(221,65,36);
     padding: 6px 14px;
 }
 
-#go:hover {
-    color: red;
+#downloadLink {
+    color: green;
+    display: none;
 }
 
 
-
+div.out {
+    min-height: 200px;
+    /* background: url('../images/loading.svg') center 0px no-repeat; */
+}
 
 .out #info {
     width: 38%;
