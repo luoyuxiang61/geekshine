@@ -14,6 +14,8 @@ linkInput.onpaste = () => {
     // while waiting paste event will not work
     wait = true
 
+    downloadLink.style.display = 'none'
+    out.innerHTML = ''
     go.style.background = "url('../images/dloading.svg') 6px 0px no-repeat"
 
 
