@@ -77,7 +77,7 @@ header .sign-in {
     float: right;
     margin-left: 3em;
     position: relative;
-    background: url('../images/git32-white.png') 8px 8px no-repeat;
+    background: url('https://io.luoyuxiang.cn/giticon.png') 8px 8px no-repeat;
 }
 
 header .sign-in:hover {
