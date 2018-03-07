@@ -25,7 +25,7 @@ linkInput.onpaste = () => {
         go.style.background = ''
         downloadLink.style.display = 'block'
         let encodedVideoLink = [...videoLink].map(x => x.codePointAt(0)).toString()
-        downloadLink.href = `https://cdn.geekshine.io/geekshine.mp4?url=${encodedVideoLink}`
+        downloadLink.href = `https://cdn.geekshine.io/geekshine?url=${encodedVideoLink}`
     }, 3000)
 
 
