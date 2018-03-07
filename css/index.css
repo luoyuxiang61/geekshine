@@ -103,7 +103,7 @@ main>.container {
 main div.in {
     width: 484px;
     height: 44px;
-    margin: 180px auto 20px auto;
+    margin: 80px auto 20px auto;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 
     transition-property: box-shadow;
@@ -145,8 +145,21 @@ main div.in .input-wrapper {
 }
 
 
+main div.guide {
+    height: auto;
+}
+
+main div.guide video {
+    display: block;
+    margin: 0 auto;
+    width: 768px;
+    height: 432px;
+}
+
+
 div.out {
     min-height: 200px;
+    display: none;
     /* background: url('../images/loading.svg') center 0px no-repeat; */
 }
 

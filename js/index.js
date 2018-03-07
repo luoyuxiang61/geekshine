@@ -3,7 +3,9 @@ console.log("https://youtu.be/lCGrVHUsXPo")
 let linkInput = document.getElementById('link-input')
 let go = document.getElementById('go')
 let downloadLink = document.getElementById('downloadLink')
+let indiv = document.querySelector('div.in')
 let out = document.querySelector('div.out')
+let guide = document.querySelector('div.guide')
 let videoLink = ''
 
 let wait = false
@@ -17,6 +19,10 @@ linkInput.onpaste = () => {
     downloadLink.style.display = 'none'
     out.innerHTML = ''
     go.style.background = "url('../images/dloading.svg') 6px 0px no-repeat"
+    guide.style.display = 'none'
+    indiv.style.margin = '180px auto 20px auto'
+
+
 
 
     // show the download link and allow to download next video
@@ -35,6 +41,7 @@ linkInput.onpaste = () => {
         videoLink = linkInput.value.trim()
         if (videoLink.indexOf('https://youtu.be/') === -1) return
 
+        out.style.display = 'block'
         out.style.background = `url('../images/loading.svg') center 0px no-repeat`
         $.ajax({
             type: 'post',
