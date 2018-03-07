@@ -34,7 +34,7 @@ header .container {
 header .logo {
     width: 160px;
     height: 48px;
-    background: url('../images/logo.svg') 0px 0px no-repeat;
+    /* background: url('../images/logo.svg') 0px 0px no-repeat; */
     float: left;
 }
 
