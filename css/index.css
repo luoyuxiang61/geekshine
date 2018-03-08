@@ -96,6 +96,10 @@ main>.container {
     margin: 0 auto;
 }
 
+main>.container::-webkit-scrollbar {
+    display: none;
+}
+
 main div.in {
     width: 484px;
     height: 44px;
@@ -167,16 +171,16 @@ div.out {
     display: none;
 }
 
-.out #info {
-    width: 480px;
+.out .info {
+    width: 80%;
     margin: 0 auto;
 }
 
 .out img {
-    height: 270px;
-    width: 480px;
+    width: 80%;
+    height: calc(width * 0.8);
     display: block;
-    margin: 5px auto;
+    margin: 10px auto;
 }
 
 

@@ -54,7 +54,7 @@ linkInput.onpaste = () => {
             success: (info) => {
                 out.style.background = ''
                 let { title, description, imgHashName } = JSON.parse(info)
-                out.innerHTML = `<div id='info'><h2>${title}</h2><p>${description}<p></div><img  src='https://cdn.geekshine.io/imgCdn?imgHashName=${imgHashName}'>`
+                out.innerHTML = `<div class='info'><h2>${title}</h2></div><img  src='https://cdn.geekshine.io/imgCdn?imgHashName=${imgHashName}'><p class='info'>${description}<p>`
             }
         })
     }, 50)
