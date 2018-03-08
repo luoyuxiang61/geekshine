@@ -21,7 +21,7 @@ linkInput.onpaste = () => {
     out.innerHTML = ''
     go.style.background = "url('../images/dloading.svg') 6px 0px no-repeat"
     guide.style.display = 'none'
-    indiv.style.margin = '180px auto 20px auto'
+    indiv.style.margin = '180px auto 30px auto'
 
 
 
@@ -32,6 +32,8 @@ linkInput.onpaste = () => {
         go.style.background = ''
         downloadLink.style.display = 'block'
         smile.style.display = 'none'
+        indiv.style.margin = '30px auto'
+
         let encodedVideoLink = [...videoLink].map(x => x.codePointAt(0)).toString()
         downloadLink.href = `https://cdn.geekshine.io/geekshine2?url=${encodedVideoLink}`
     }, 3000)
