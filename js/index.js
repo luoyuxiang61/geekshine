@@ -3,6 +3,7 @@ console.log("https://youtu.be/lCGrVHUsXPo")
 let linkInput = document.getElementById('link-input')
 let go = document.getElementById('go')
 let downloadLink = document.getElementById('downloadLink')
+let smile = document.getElementById('smile')
 let indiv = document.querySelector('div.in')
 let out = document.querySelector('div.out')
 let guide = document.querySelector('div.guide')
@@ -30,6 +31,7 @@ linkInput.onpaste = () => {
         wait = false
         go.style.background = ''
         downloadLink.style.display = 'block'
+        smile.style.display = 'none'
         let encodedVideoLink = [...videoLink].map(x => x.codePointAt(0)).toString()
         downloadLink.href = `https://cdn.geekshine.io/geekshine2?url=${encodedVideoLink}`
     }, 3000)
@@ -54,4 +56,17 @@ linkInput.onpaste = () => {
             }
         })
     }, 50)
+}
+
+downloadLink.onclick = () => {
+    downloadLink.style.display = 'none'
+    smile.style.display = 'block'
+}
+
+
+smile.onclick = () => {
+    go.style.background = "url('../images/dloading.svg') 6px 0px no-repeat"
+    setTimeout(() => {
+        go.style.background = ''
+    },1000)
 }

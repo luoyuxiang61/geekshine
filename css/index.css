@@ -6,7 +6,7 @@
 
 html{
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Acme', sans-serif;
     font-size: 16px;
 }
 
@@ -23,7 +23,7 @@ body {
 
 header {
     height: 48px;
-    background: #24292e;
+    background: #24292e36;
 }
 
 header .container {
@@ -35,18 +35,24 @@ header .container {
 header .logo {
     width: 160px;
     height: 48px;
-    /* background: url('../images/logo.svg') 0px 0px no-repeat; */
     float: left;
+    line-height: 48px;
+    text-align: center;
+    font-size: 1.5em;
+
+    transition-property: color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
 }
 
 header .logo:hover {
     cursor: pointer;
+    color: white;
 }
 
 
 nav {
     float: right;
-    text-transform: uppercase;
 }
 
 header ul {
@@ -64,7 +70,7 @@ header ul li:nth-last-child(1) {
 
 header ul li a {
     line-height: 48px;
-    color: #eee;
+    color: rgba(0, 0, 0, 0.562);
     text-decoration: unset;
 }
 
@@ -72,25 +78,13 @@ header ul li a:hover {
     color: rgba(255,255,255,0.75) !important;
 }
 
-header .sign-in {
-    width: 48px;
-    height: 48px;
-    float: right;
-    margin-left: 3em;
-    position: relative;
-    background: url('https://io.luoyuxiang.cn/giticon.png') 8px 8px no-repeat;
-}
-
-header .sign-in:hover {
-    cursor: pointer;
-}
 /* header over */
 
 
 
 /* main start */
 main {
-    height: calc(100% - 48px - 40px)
+    height: calc(100% - 48px - 20px)
 }
 
 main>.container {
@@ -104,7 +98,7 @@ main>.container {
 main div.in {
     width: 484px;
     height: 44px;
-    margin: 80px auto 20px auto;
+    margin: 50px auto;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 
     transition-property: box-shadow;
@@ -140,10 +134,14 @@ main div.in .input-div {
     padding: 6px 14px;
 }
 
+
+
 #downloadLink {
     color: green;
     display: none;
 }
+
+
 
 
 main div.guide {
@@ -155,12 +153,12 @@ main div.guide video {
     margin: 0 auto;
     width: 768px;
     height: 432px;
+    box-shadow: 0 1px 11px 0px black;
 }
 
 
 div.out {
     min-height: 200px;
-    display: none;
 }
 
 .out #info {
@@ -182,7 +180,8 @@ div.out {
 /* footer start */
 footer {
     text-align: center;
-    height: 40px;
-    background: #f2f2f2;
+    height: 20px;
+    background: #eee7e79a;
+    font-size: 0.8em;
 }
 
