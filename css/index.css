@@ -6,7 +6,7 @@
 
 html{
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
@@ -115,7 +115,7 @@ main div.in:hover, main div.in:active {
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08)
 }
 
-main div.in .input-wrapper {
+main div.in .input-div {
     border: none;
     height: 44px;
     width: 428px;
@@ -124,7 +124,7 @@ main div.in .input-wrapper {
     float: left;
 }
 
-.input-wrapper input {
+.input-div input {
     border: none;
     width: 403px;
     height: 34px;
@@ -160,17 +160,16 @@ main div.guide video {
 div.out {
     min-height: 200px;
     display: none;
-    /* background: url('../images/loading.svg') center 0px no-repeat; */
 }
 
 .out #info {
-    width: 38%;
+    width: 480px;
     float: left;
 }
 
 .out img {
-    height: 200px;
-    width: 300px;
+    height: 270px;
+    width: 480px;
     float: right;
 }
 
