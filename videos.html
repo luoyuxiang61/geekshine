@@ -5,40 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GeekShine</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.3.3/video-js.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.3.3/video.js"></script>
-
     <style>
-        html {
+        html, body {
             height: 100%;
             margin: 0;
             padding: 0;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
             background: black;
+            overflow: hidden;
         }
-
-        #my-player {
-            width: 1024px;
-            height: 576px;
-            margin: 25px auto;
+        video {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
         }
-        
     </style>
 </head>
 <body>
-    <video
-        id="my-player"
-        class="video-js"
-        preload="auto"
-        autoplay
-        width="100%"
-        height="100%"
-        data-setup='{}'>
-        <source src="https://cdn.geekshine.io/videoCdn?name=lf2.mp4" type="video/mp4"></source>
-    </video>
+    <video src="https://io.luoyuxiang.cn/lf2.mp4" autoplay loop muted></video>
 </body>
 </html>
