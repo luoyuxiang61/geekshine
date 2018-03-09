@@ -39,10 +39,8 @@ linkInput.onpaste = () => {
                 downloadLink.style.display = 'block'
                 smile.style.display = 'none'
                 indiv.style.margin = '30px auto'
-
                 let encodedUrl = [...realUrl].map(x => x.codePointAt(0)).toString()
                 downloadLink.href = `https://cdn.geekshine.io/geekshine2?url=${encodedUrl}`
-
             }
         })
     },60)
