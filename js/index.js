@@ -28,15 +28,24 @@ linkInput.onpaste = () => {
 
     // show the download link and allow to download next video
     setTimeout(() => {
-        wait = false
-        go.style.background = ''
-        downloadLink.style.display = 'block'
-        smile.style.display = 'none'
-        indiv.style.margin = '30px auto'
+        $.ajax({
+            type: 'post',
+            url: 'https://cdn.geekshine.io/realUrl',
+            data: { videoLink },
+            success: (realUrl) => {
+                console.log(realUrl)
+                wait = false
+                go.style.background = ''
+                downloadLink.style.display = 'block'
+                smile.style.display = 'none'
+                indiv.style.margin = '30px auto'
 
-        let encodedVideoLink = [...videoLink].map(x => x.codePointAt(0)).toString()
-        downloadLink.href = `https://cdn.geekshine.io/geekshine2?url=${encodedVideoLink}`
-    }, 3000)
+                let encodedUrl = [...realUrl].map(x => x.codePointAt(0)).toString()
+                downloadLink.href = `https://cdn.geekshine.io/geekshine2?url=${encodedUrl}`
+
+            }
+        })
+    },60)
 
 
 
